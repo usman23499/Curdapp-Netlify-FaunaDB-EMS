@@ -268,7 +268,7 @@ setEmpData({
             return(
             <StyledTableRow key={index}>
               <StyledTableCell component="th" scope="row">
-               {empupdate==index?  <TextField className={updatenameclass} required id="standard-required" onChange={(event)=>
+               {empupdate===index?  <TextField className={updatenameclass} required id="standard-required" onChange={(event)=>
                     setupdateEmpData({
                       ...updateEmpdata,
                       name:event.target.value
